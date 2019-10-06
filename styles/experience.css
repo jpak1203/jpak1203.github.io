@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    background: #F1EFE0;
+}
+
+#ellipse {
+    position: absolute;
+    width: 1754px;
+    height: 1754px;
+    left: 412px;
+    top: -397px;
+    border-radius: 50%;
+    pointer-events: none;
+
+    background: #CE8888;
+}
+
+#hm-nav-selection {
+    position: absolute;
+    width: 278px;
+    height: 415px;
+    left: 1100px;
+    top: 240px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 423px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    pointer-events: none;
+
+    color: #F1EFE0;
+
+}
+
+#hm-nav-list {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+    list-style: none;
+}
+
+#hm-nav-list a {
+    color:#F1EFE0;
+    text-decoration: none;
+}
+
+#hm-about {
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 535px;
+    top: 125px;
+    opacity: 0;
+}
+
+#hm-experience {
+    position: absolute;
+    width: 245px;
+    height: 47px;
+    left: 450px;
+    top: 330px;
+    opacity: 0;
+}
+
+#hm-projects {
+    position: absolute;
+    width: 245px;
+    height: 47px;
+    left: 431px;
+    top: 535px;
+    opacity: 0;
+}
+
+#hm-contact {
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 514px;
+    top: 735px;
+    opacity: 0;
+}
+
+#exp-backdrop {
+    position: absolute;
+    width: 335px;
+    height: 900px;
+    left: 1109px;
+    top: -900px;
+    z-index: -3;
+
+    background: #CE8888;
+}
+
+#title {
+    position: absolute;
+    width: 700px;
+    height: 230px;
+    left: 790px;
+    top: 350px;
+    opacity: 0;
+    z-index:-2;
+    pointer-events: none;
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 124px;
+    line-height: 231px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #F1EFE0;
+
+    transform: rotate(90deg);
+}
+
+.exp-skills {
+    position: absolute;
+    width: 1110px;
+    height: 185px;
+
+    color: #44484A;
+}
+
+.exp-skills h3 {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 500px;
+    top: 75px;
+    opacity: 0;
+    
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+#exp-languages {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 50px;
+    opacity: 0;
+}
+
+#exp-frameworks {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 90px;   
+    opacity: 0;
+}
+
+#exp-other {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 130px;
+    opacity: 0;
+}
+
+.exp-skills div h4 {
+    position: absolute;
+    left:75px;
+    width: 310px;
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+
+    text-align: right;
+}
+
+.exp-skills div p {
+    display:inline;
+
+    position: absolute;
+    left: 425px;
+    top: 10px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align:left;
+}
+
+.exp-professional {
+    position: absolute;
+    width: 1110px;
+    height: 475px;
+    top: 185px;
+    
+    color: #F1EFE0;
+}
+
+#pro-backdrop {
+    position: absolute;
+    width: 1110px;
+    height: 100%;
+    left: -1200px;
+    z-index: -1;
+
+    background-color: #CE8888;
+}
+
+#exp-pro-title {
+    position: absolute;
+    width: 142px;
+    height: 35px;
+    left: 460px;
+    top: 200px;
+    opacity: 0;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+
+    letter-spacing: 0.02em;
+}
+
+#exp-job {
+    position: absolute;
+    width:100%;
+    height:100px;
+    top: 70px;
+    opacity: 0;
+}
+
+#exp-job div {
+    position: absolute;
+    left:75px;
+    width: 310px;
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+
+    text-align: right;
+}
+
+#exp-job div p {
+    font-family: Minion Pro;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: right;
+}
+
+#exp-job ul {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 425px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    display: block;
+}
+
+#exp-project-title {
+    position: absolute;
+    width: 161px;
+    height: 29px;
+    left: 488px;
+    top: 185px;
+    opacity: 0;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+}
+
+#exp-projects { 
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 225px;
+    opacity: 0;
+}
+
+#exp-coned div {
+    position: absolute;
+    left:75px;
+    width: 310px;
+    top: 5px;
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+
+    text-align: right;
+}
+
+#exp-coned div p {
+    font-family: Minion Pro;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: right;
+}
+
+#exp-coned ul {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 425px;
+    top: 5px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    display: block;
+}
+
+#exp-cherwell div {
+    position: absolute;
+    left:75px;
+    top: 125px;
+    width: 310px;
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+
+    text-align: right;
+}
+
+#exp-cherwell div p {
+    font-family: Minion Pro;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: right;
+}
+
+#exp-cherwell ul {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 425px;
+    top: 125px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    display: block;
+}
+
+
+.exp-education {
+    position: absolute;
+    width: 1110px;
+    height: 185px;
+    top: 660px;
+
+    color: #44484A;
+}
+
+.exp-education h3 {
+    position: absolute;
+    width: 112px;
+    height: 38px;
+    left: 485px;
+    top: 60px;
+    opacity: 0;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #44484A;
+}
+
+#exp-degree div {
+    position: absolute;
+    left:75px;
+    top: 60px;
+    width: 310px;
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+
+    text-align: right;
+}
+
+#exp-degree {
+    opacity: 0;
+}
+
+#exp-degree div p {
+    font-family: Minion Pro;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: right;
+}
+
+#exp-degree ul {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 425px;
+    top: 70px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    display: block;
+}

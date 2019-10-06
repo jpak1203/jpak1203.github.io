@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    background: #F1EFE0;
+}
+
+#hm-intro {
+    /* Hi, I’m Justin Pak */
+
+    position: absolute;
+    left: 115px;
+    top: 290px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    pointer-events: none;
+
+    color: #44484A;
+}
+
+#ellipse {
+    /* Hover to option menu */
+
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 840px;
+    top: 350px;
+    border-radius:50%;
+    z-index: -1;
+
+    background: #CE8888;
+}
+
+
+#hm-name {
+    position: absolute;
+    width: 231px;
+    height: 62px;
+    left: 44px;
+    top: 31px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    pointer-events: none;
+
+    color: #44484A;
+}
+
+#hm-nav-selection {
+    position: absolute;
+    width: 278px;
+    height: 415px;
+    left: 1100px;
+    top: 240px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 423px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    pointer-events: none;
+
+    color: #F1EFE0;
+
+}
+
+#hm-nav-list {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+    list-style: none;
+}
+
+#hm-nav-list a {
+    color:#F1EFE0;
+    text-decoration: none;
+}
+
+#hm-about {
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 535px;
+    top: 125px;
+    opacity: 0;
+}
+
+#hm-experience {
+    position: absolute;
+    width: 245px;
+    height: 47px;
+    left: 450px;
+    top: 330px;
+    opacity: 0;
+}
+
+#hm-projects {
+    position: absolute;
+    width: 245px;
+    height: 47px;
+    left: 431px;
+    top: 535px;
+    opacity: 0;
+}
+
+#hm-contact {
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 514px;
+    top: 735px;
+    opacity: 0;
+}
