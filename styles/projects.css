@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    background: #F1EFE0;
+}
+
+#ellipse {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 1350px;
+    top: 25px;
+    border-radius: 50%;
+    pointer-events: none;
+
+    background: #CE8888;
+}
+
+#hm-nav-selection {
+    position: absolute;
+    width: 278px;
+    height: 415px;
+    left: 1100px;
+    top: 240px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 423px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    pointer-events: none;
+
+    color: #F1EFE0;
+
+}
+
+#hm-nav-list {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+    list-style: none;
+}
+
+#hm-nav-list a {
+    color:#F1EFE0;
+    text-decoration: none;
+}
+
+#hm-about {
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 535px;
+    top: 125px;
+    opacity: 0;
+}
+
+#hm-experience {
+    position: absolute;
+    width: 245px;
+    height: 47px;
+    left: 450px;
+    top: 330px;
+    opacity: 0;
+}
+
+#hm-projects {
+    position: absolute;
+    width: 245px;
+    height: 47px;
+    left: 431px;
+    top: 535px;
+    opacity: 0;
+}
+
+#hm-contact {
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 514px;
+    top: 735px;
+    opacity: 0;
+}
+
+#proj-title {
+    position: absolute;
+    width: 264px;
+    height: 106px;
+    left: 175px;
+    top: 20px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 106px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #CE8888;
+}
+
+#proj-border {
+
+    position: absolute;
+    width: 1174px;
+    height: 650px;
+    left: 133px;
+    top: 75px;
+
+    border: 5px solid #CE8888;
+    box-sizing: border-box;
+}
+
+#proj-home h4 {
+
+    position: absolute;
+    width: 715px;
+    height: 77px;
+    left: 275px;
+    top: 250px;
+    
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 77px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    
+    color: #000000;
+}
+
+#proj-home p {
+    position: absolute;
+    width: 104px;
+    height: 22px;
+    left: 950px;
+    top: 350px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+
+#pointer-down {
+    position: absolute;
+    width: 0; 
+    height: 0;
+    left: 550px;
+    top: 375px;
+
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid #CE8888;
+}
+
+#prev {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 110px;
+    top: 350px;
+    border-radius: 50%;
+    z-index: 1;
+
+    background: #CE8888;
+    transform: rotate(-180deg);
+}
+
+#left-arrow {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    border-left: 10px solid #F1EFE0;
+    left: 27.5px;
+    top: 20px;
+}
+
+#next {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 1275px;
+    top: 350px;
+    border-radius: 50%;
+    z-index: 1;
+
+    background: #CE8888;
+    transform: rotate(-180deg);
+}
+
+#right-arrow {
+    position:absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid #F1EFE0;
+    left: 20px;
+    top: 20px;
+}
+
+#proj-selection {
+    position: absolute;
+    width: 963px;
+    height: 75px;
+    left: 238px;
+    top: 780px;
+}
+
+#galluri {
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    margin: 0 auto;
+    opacity: 0.2;
+
+    background: url(../imgs/galluri_icon.png);
+    background-position: center;
+    background-size: 75%;
+}
+
+#charity-water {
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    margin: 0 auto;
+    left: 250px;
+    opacity: 0.2;
+
+    background: url(../imgs/charity-water-icon.png);
+    background-position: center;
+    background-size: 80%;
+}
+
+#proj3 {
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    margin: 0 auto;
+    left: 500px;
+    opacity: 0.2;
+
+    background: url(../imgs/ziont-eyes.png);
+    background-position: center;
+    background-size: 90%;
+}
+
+#proj4 {
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    margin: 0 auto;
+    left: 750px;
+    opacity: 0.2;
+
+    background: url(../imgs/hello-kitty-deanna.png);
+    background-position: center;
+    background-size: 95%;
+}

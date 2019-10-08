@@ -5,8 +5,8 @@ const tl = new TimelineLite({ paused: false });
 tl.to("#ellipse", 1, {
     width: '58px',
     height: '58px',
-    left: '1250px',
-    top: '75px',
+    left: '1350px',
+    top: '25px',
     pointerEvents: "auto",
     backgroundColor: "#F1EFE0",
     ease: Power2.easeOut
