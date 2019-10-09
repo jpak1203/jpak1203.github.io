@@ -15,10 +15,10 @@ html {
 
 #ellipse {
     position: absolute;
-    width: 58px;
-    height: 58px;
-    left: 1350px;
-    top: 25px;
+    width: 1754px;
+    height: 1754px;
+    left: 412px;
+    top: -397px;
     border-radius: 50%;
     pointer-events: none;
 
@@ -104,15 +104,15 @@ html {
 
 #proj-title {
     position: absolute;
-    width: 264px;
-    height: 106px;
-    left: 175px;
-    top: 20px;
+    width: 5px;
+    height: 5px;
+    left: 700px;
+    top: 375px;
 
     font-family: Heebo;
     font-style: normal;
     font-weight: normal;
-    font-size: 72px;
+    font-size: 0;
     line-height: 106px;
     /* identical to box height */
     display: flex;
@@ -123,12 +123,13 @@ html {
 }
 
 #proj-border {
-
     position: absolute;
-    width: 1174px;
-    height: 650px;
-    left: 133px;
-    top: 75px;
+    width: 5px;
+    height: 5px;
+    left: 700px;
+    top: 375px;
+    opacity: 0;
+    z-index: -1;
 
     border: 5px solid #CE8888;
     box-sizing: border-box;
@@ -141,6 +142,7 @@ html {
     height: 77px;
     left: 275px;
     top: 250px;
+    opacity: 0;
     
     font-family: Minion Pro;
     font-style: normal;
@@ -159,6 +161,7 @@ html {
     height: 22px;
     left: 950px;
     top: 350px;
+    opacity: 0;
 
     font-family: Minion Pro;
     font-style: normal;
@@ -177,6 +180,7 @@ html {
     height: 0;
     left: 550px;
     top: 375px;
+    opacity: 0;
 
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
@@ -190,8 +194,8 @@ html {
     height: 55px;
     left: 110px;
     top: 350px;
+    opacity: 0;
     border-radius: 50%;
-    z-index: 1;
 
     background: #CE8888;
     transform: rotate(-180deg);
@@ -200,7 +204,7 @@ html {
 #left-arrow {
     position: absolute;
     width: 0; 
-    height: 0; 
+    height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     
@@ -211,12 +215,12 @@ html {
 
 #next {
     position: absolute;
-    width: 55px;
-    height: 55px;
-    left: 1275px;
-    top: 350px;
+    width: 5px;
+    height: 5px;
+    left: 700px;
+    top: 375px;
+    opacity: 0;
     border-radius: 50%;
-    z-index: 1;
 
     background: #CE8888;
     transform: rotate(-180deg);
@@ -226,6 +230,7 @@ html {
     position:absolute;
     width: 0; 
     height: 0; 
+    opacity: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent; 
     
@@ -239,7 +244,7 @@ html {
     width: 963px;
     height: 75px;
     left: 238px;
-    top: 780px;
+    top: 850px;
 }
 
 #galluri {
