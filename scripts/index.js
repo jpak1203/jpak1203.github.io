@@ -10,9 +10,10 @@ ellipseAnim.to("#hm-intro", 0.5, {
     opacity: '0',
     ease: Power2.easeOut
 })
-.to("#hm-name", 0.5, {
+.to("#hm-name", 0.75, {
     opacity: '1',
-}, '-=0.25')
+    pointerEvents: 'auto',
+})
 .to("#ellipse", 0.5, {
     width: '1754px',
     height: '1754px',
@@ -21,6 +22,11 @@ ellipseAnim.to("#hm-intro", 0.5, {
     boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)",
     ease: Power2.easeOut
 }, '-=0.4')
+.to("#close-nav", 0.5, {
+    opacity: '1',
+    pointerEvents: 'auto',
+    ease: Power2.easeOut
+}, "-=0.3")
 .to("#hm-about", 1.5, {
     opacity: '1',
     immediateRender: false,
@@ -43,20 +49,39 @@ ellipseAnim.to("#hm-intro", 0.5, {
 }, '-=1.25');
 
 
+let clicked = false;
+const x = document.querySelector("#close-nav");
+const justinpak = document.querySelector("#hm-name");
 
-nav.addEventListener("mouseenter", (e) => {
-    toggleTween(ellipseAnim)
-    navList.style.pointerEvents = "auto";
+nav.addEventListener("click", (e) => {
+    if (!clicked) {
+        toggleTween(ellipseAnim)
+        navList.style.pointerEvents = "auto";
+        clicked = true;
+    }
 });
 
-nav.addEventListener("mouseleave", (e) => {
-    toggleTween(ellipseAnim)
-    navList.style.pointerEvents = "none";
-})
+x.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (clicked) {
+        toggleTween(ellipseAnim)
+        navList.style.pointerEvents = "none";
+        clicked = false;
+    }
+});
+
+justinpak.addEventListener("mouseenter", (e) => {
+    justinpak.style.textDecoration = "underline";
+    justinpak.style.fontStyle = "italic";
+});
+justinpak.addEventListener("mouseleave", (e) => {
+    justinpak.style.textDecoration = "none";
+    justinpak.style.fontStyle = "normal";
+});
 
 const navListItems = navList.getElementsByTagName("li");
 for (var i = 0; i < navListItems.length; i++) {
-    console.log(navListItems[i]);
     navListItems[i].addEventListener("mouseenter", changeSelector);
     navListItems[i].addEventListener("mouseleave", noSelector);
 }
@@ -78,4 +103,3 @@ function noSelector() {
     navSelection.style.opacity = 0;
     navSelection.textContent = "";
 }
-

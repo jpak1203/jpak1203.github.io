@@ -68,6 +68,7 @@ html {
     letter-spacing: 0.03em;
     opacity: 0;
     pointer-events: none;
+    text-decoration: none;
 
     color: #44484A;
 }
@@ -111,6 +112,29 @@ html {
 #hm-nav-list a {
     color:#F1EFE0;
     text-decoration: none;
+}
+
+#close-nav {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+    list-style: none;
+
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 475px;
+    top: 30px;
+    opacity: 0;
+    text-decoration: none;
+
+    color: #CE8888;
 }
 
 #hm-about {

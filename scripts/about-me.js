@@ -52,11 +52,13 @@ tl.to("#ellipse", 1, {
 // NAV MENU OPEN
 
 const ellipseAnim = new TimelineLite({ paused: true, reversed: true });
-const nav = document.querySelector(".hm-nav");
-const navList = document.querySelector("#hm-nav-list");
-const navSelection = document.querySelector("#hm-nav-selection")
 
-ellipseAnim.to("#ellipse", 0.5, {
+ellipseAnim.to("#hm-name", 0.5, {
+    opacity: '1',
+    zIndex: 1,
+    pointerEvents: 'auto',
+})
+.to("#ellipse", 0.5, {
     width: '1754px',
     height: '1754px',
     left: '412px',
@@ -69,6 +71,12 @@ ellipseAnim.to("#ellipse", 0.5, {
 .to("#hm-nav-selection", 0, {
     zIndex: 1
 })
+.to("#close-nav", 0.75, {
+    opacity: '1',
+    zIndex: 1,
+    pointerEvents: 'auto',
+    ease: Power2.easeOut
+}, "-=0.3")
 .to("#hm-about", 1.5, {
     opacity: '1',
     zIndex: 1,
@@ -94,19 +102,43 @@ ellipseAnim.to("#ellipse", 0.5, {
     ease: Power2.easeOut
 }, '-=1.25');
 
-nav.addEventListener("mouseenter", (e) => {
-    toggleTween(ellipseAnim)
-    navList.style.pointerEvents = "auto";
+const nav = document.querySelector(".hm-nav");
+const navList = document.querySelector("#hm-nav-list");
+const navSelection = document.querySelector("#hm-nav-selection")
+
+let clicked = false;
+const x = document.querySelector("#close-nav");
+const justinpak = document.querySelector("#hm-name");
+
+nav.addEventListener("click", (e) => {
+    if (!clicked) {
+        toggleTween(ellipseAnim)
+        navList.style.pointerEvents = "auto";
+        clicked = true;
+    }
 });
 
-nav.addEventListener("mouseleave", (e) => {
-    toggleTween(ellipseAnim)
-    navList.style.pointerEvents = "none";
-})
+x.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (clicked) {
+        toggleTween(ellipseAnim)
+        navList.style.pointerEvents = "none";
+        clicked = false;
+    }
+});
+
+justinpak.addEventListener("mouseenter", (e) => {
+    justinpak.style.textDecoration = "underline";
+    justinpak.style.fontStyle = "italic";
+});
+justinpak.addEventListener("mouseleave", (e) => {
+    justinpak.style.textDecoration = "none";
+    justinpak.style.fontStyle = "normal";
+});
 
 const navListItems = navList.getElementsByTagName("li");
 for (var i = 0; i < navListItems.length; i++) {
-    console.log(navListItems[i]);
     navListItems[i].addEventListener("mouseenter", changeSelector);
     navListItems[i].addEventListener("mouseleave", noSelector);
 }
