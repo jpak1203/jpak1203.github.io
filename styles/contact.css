@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    background: #F1EFE0;
+}
+
+#hm-name {
+    position: absolute;
+    width: 231px;
+    height: 62px;
+    left: 44px;
+    top: 31px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    pointer-events: none;
+    text-decoration: none;
+
+    color: #44484A;
+}
+
+#ellipse {
+    position: absolute;
+    width: 1754px;
+    height: 1754px;
+    left: 412px;
+    top: -397px;
+    border-radius: 50%;
+    pointer-events: none;
+
+    background: #CE8888;
+}
+
+#hm-nav-selection {
+    position: absolute;
+    width: 278px;
+    height: 415px;
+    left: 1100px;
+    top: 240px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 423px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    pointer-events: none;
+
+    color: #F1EFE0;
+
+}
+
+#hm-nav-list {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+    list-style: none;
+}
+
+#hm-nav-list a {
+    color:#F1EFE0;
+    text-decoration: none;
+}
+
+#close-nav {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+    list-style: none;
+
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 475px;
+    top: 30px;
+    opacity: 0;
+    text-decoration: none;
+
+    color: #CE8888;
+}
+
+#hm-about {
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 535px;
+    top: 125px;
+    opacity: 0;
+}
+
+#hm-experience {
+    position: absolute;
+    width: 245px;
+    height: 47px;
+    left: 450px;
+    top: 330px;
+    opacity: 0;
+}
+
+#hm-projects {
+    position: absolute;
+    width: 245px;
+    height: 47px;
+    left: 431px;
+    top: 535px;
+    opacity: 0;
+}
+
+#hm-contact {
+    position: absolute;
+    width: 245px;
+    height: 48px;
+    left: 514px;
+    top: 735px;
+    opacity: 0;
+}
+
+#cnt-backdrop {
+    position: absolute;
+    width: 1440px;
+    height: 251px;
+    left: 0px;
+    top: 650px;
+    z-index: -1;
+
+    background: #CE8888;
+}
+
+#cnt-title {
+    position: absolute;
+    width: 1442px;
+    height: 251px;
+    left: -1px;
+    top: 650px;
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 415px;
+    line-height: 664px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #F1EFE0;
+}
+
+#cnt-statement {
+    position: absolute;
+    width: 432px;
+    height: 106px;
+    left: 504px;
+    top: 101px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 106px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+
+    color: #CE8888;
+}
+
+#email p:nth-child(1) {
+    position: absolute;
+    width: 63px;
+    height: 29px;
+    left: 565px;
+    top: 287px;
+    
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    
+    color: #44484A;    
+}
+
+#email p:nth-child(2) {
+    position: absolute;
+    width: 211px;
+    height: 29px;
+    left: 663px;
+    top: 287px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+
+    color: #44484A;
+}
+
+.social-media {
+    position: absolute;
+    width: 747px;
+    height: 129px;
+    left: 346px;
+    top: 385px;
+}
+
+.social-media div {
+    background: white;
+    display: inline-block;
+    width: 129px;
+    height: 129px;
+    border-radius: 50%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
