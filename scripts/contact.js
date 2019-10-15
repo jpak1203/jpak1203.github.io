@@ -12,6 +12,37 @@ tl.to("#ellipse", 1, {
 .to("#ellipse", 0, {
     pointerEvents: "auto"
 })
+.to("#cnt-title", 0, {
+    opacity: 1
+})
+.to("#cnt-backdrop", 1, {
+    left: "0%",
+    ease: Power2.easeOut
+})
+.to("#cnt-statement", 1, {
+    opacity: 1,
+    ease: Power2.easeOut
+}, "-=0.25")
+.to("#email", 1, {
+    opacity: 1,
+    ease: Power2.easeOut
+}, "-=0.5")
+.to("#facebook", 1, {
+    opacity: 1,
+    ease: Power2.easeOut
+}, "-=0.5")
+.to("#instagram", 1, {
+    opacity: 1,
+    ease: Power2.easeOut
+}, "-=0.75")
+.to("#github", 1, {
+    opacity: 1,
+    ease: Power2.easeOut
+}, "-=0.75")
+.to("#linkedin", 1, {
+    opacity: 1,
+    ease: Power2.easeOut
+}, "-=0.75");
 
 // NAV MENU OPEN
 
