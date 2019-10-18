@@ -109,8 +109,10 @@ const navSelection = document.querySelector("#hm-nav-selection")
 let clicked = false;
 const x = document.querySelector("#close-nav");
 const justinpak = document.querySelector("#hm-name");
+const ellipse = document.querySelector("#ellipse")
 
 nav.addEventListener("click", (e) => {
+    ellipse.classList.remove("pulse");
     if (!clicked) {
         toggleTween(ellipseAnim)
         navList.style.pointerEvents = "auto";
@@ -120,7 +122,7 @@ nav.addEventListener("click", (e) => {
 
 x.addEventListener("click", (e) => {
     e.preventDefault();
-
+    ellipse.classList.add("pulse");
     if (clicked) {
         toggleTween(ellipseAnim)
         navList.style.pointerEvents = "none";

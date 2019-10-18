@@ -4,6 +4,21 @@ const nav = document.querySelector(".hm-nav");
 const navList = document.querySelector("#hm-nav-list");
 const navSelection = document.querySelector("#hm-nav-selection")
 
+
+const tl = new TimelineLite({ paused: false });
+
+tl.to("#ellipse", 1, {
+    width: "130px",
+    height: "130px",
+    left: "840px",
+    top: "350px",
+    ease: Power2.easeOut
+})
+.to("#hm-intro", 0.5, {
+    opacity: 1,
+    ease: Power2.easeOut
+})
+
 const ellipseAnim = new TimelineLite({ paused: true, reversed: true });
 
 ellipseAnim.to("#hm-intro", 0.5, {
@@ -52,8 +67,10 @@ ellipseAnim.to("#hm-intro", 0.5, {
 let clicked = false;
 const x = document.querySelector("#close-nav");
 const justinpak = document.querySelector("#hm-name");
+const ellipse = document.querySelector("#ellipse")
 
 nav.addEventListener("click", (e) => {
+    ellipse.classList.remove("pulse");
     if (!clicked) {
         toggleTween(ellipseAnim)
         navList.style.pointerEvents = "auto";
@@ -63,7 +80,7 @@ nav.addEventListener("click", (e) => {
 
 x.addEventListener("click", (e) => {
     e.preventDefault();
-
+    ellipse.classList.add("pulse");
     if (clicked) {
         toggleTween(ellipseAnim)
         navList.style.pointerEvents = "none";
