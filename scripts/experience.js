@@ -167,10 +167,14 @@ x.addEventListener("click", (e) => {
 
 justinpak.addEventListener("mouseenter", (e) => {
     justinpak.style.textDecoration = "underline";
+    justinpak.style.background = "#CE8888";
+    justinpak.style.border = "2px solid #F1EFE0"
     justinpak.style.fontStyle = "italic";
 });
 justinpak.addEventListener("mouseleave", (e) => {
     justinpak.style.textDecoration = "none";
+    justinpak.style.background = "#F1EFE0";
+    justinpak.style.border = "2px solid #CE8888"
     justinpak.style.fontStyle = "normal";
 });
 

@@ -29,9 +29,9 @@ html {
 
 #hm-name {
     position: absolute;
-    width: 231px;
     height: 62px;
-    left: 44px;
+    padding-left: 44px;
+    padding-right: 10px;
     top: 31px;
 
     font-family: Heebo;
@@ -46,8 +46,10 @@ html {
     opacity: 0;
     pointer-events: none;
     text-decoration: none;
+    border: 2px solid rgba(206, 136, 136, 0.70);
 
     color: #44484A;
+    background: #F1EFE0;
 }
 
 #ellipse {
