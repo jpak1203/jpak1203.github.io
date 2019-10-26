@@ -299,6 +299,102 @@ html {
     top: 20px;
 }
 
+.project-reel li {
+    padding: 3px;
+}
+
+#galluri {
+    opacity: 0;
+}
+
+#galluri h4 {
+    position: absolute;
+    height: 94px;
+    left: 500px;
+    top: 5px;
+    
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 94px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    
+    color: #44484A;    
+}
+
+#galluri img {
+    position: absolute;
+    width: 250px;
+    height: 460px;
+    left: 250px;
+    top: 120px;
+}
+
+#galluri ul {
+    position: absolute;
+    width: 666px;
+    height: 146px;
+    left: 550px;
+    top: 250px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+
+    color: #44484A;
+}
+
+#charity-water {
+    opacity: 0;
+}
+
+#charity-water h4 {
+    position: absolute;
+    width: 569px;
+    height: 73px;
+    left: 435px;
+    top: 10px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 73px;
+    letter-spacing: 0.02em;
+
+    color: #44484A;
+}
+
+#charity-water img {
+    position: absolute;
+    width: 520px;
+    height: 296px;
+    left: 350px;
+    top: 125px;    
+}
+
+#charity-water ul {
+    position: absolute;
+    width: 532px;
+    height: 146px;
+    left: 400px;
+    top: 450px;
+
+    font-family: Minion Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+
+    color: #44484A;
+}
+
 #proj-selection {
     position: absolute;
     width: 963px;
@@ -307,7 +403,7 @@ html {
     top: 850px;
 }
 
-#galluri {
+#proj1 {
     position: absolute;
     width: 225px;
     height: 50px;
@@ -319,7 +415,7 @@ html {
     background-size: 75%;
 }
 
-#charity-water {
+#proj2 {
     position: absolute;
     width: 225px;
     height: 50px;
