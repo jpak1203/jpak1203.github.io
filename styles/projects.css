@@ -307,6 +307,7 @@ html {
 
 #galluri {
     opacity: 0;
+    pointer-events: none;
 }
 
 #galluri h4 {
@@ -353,6 +354,7 @@ html {
 
 #charity-water {
     opacity: 0;
+    pointer-events: none;
 }
 
 #charity-water h4 {
@@ -400,7 +402,7 @@ html {
 #proj-selection {
     position: absolute;
     width: 963px;
-    height: 75px;
+    height: 100px;
     left: 238px;
     top: 850px;
 }
