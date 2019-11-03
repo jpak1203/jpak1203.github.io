@@ -33,6 +33,7 @@ html {
     padding-left: 44px;
     padding-right: 10px;
     top: 31px;
+    left: -300px;
 
     font-family: Heebo;
     font-style: normal;
@@ -225,7 +226,7 @@ html {
 #abt-intro {
     position: absolute;
     width: 669px;
-    height: 97px;
+    height: 100px;
     left: -150px;
     top: 75px;
     opacity: 0;
@@ -243,7 +244,7 @@ html {
 #abt-goals {
     position: absolute;
     width: 813px;
-    height: 166px;
+    height: 175px;
     left: 125px;
     top: 400px;
     opacity: 0;  

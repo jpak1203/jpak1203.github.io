@@ -27,6 +27,7 @@ ellipseAnim.to("#hm-intro", 0.5, {
 })
 .to("#hm-name", 0.75, {
     opacity: '1',
+    left: 0,
     pointerEvents: 'auto',
 })
 .to("#ellipse", 0.5, {

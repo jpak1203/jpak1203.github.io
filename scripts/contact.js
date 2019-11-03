@@ -50,6 +50,7 @@ const ellipseAnim = new TimelineLite({ paused: true, reversed: true });
 
 ellipseAnim.to("#hm-name", 0.5, {
     opacity: '1',
+    left: 0,
     zIndex: 1,
     pointerEvents: 'auto',
 })
