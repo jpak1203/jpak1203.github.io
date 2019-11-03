@@ -58,6 +58,7 @@ ellipseAnim.to("#hm-name", 0.5, {
     height: '1754px',
     left: '412px',
     top: '-397px',
+    cursor: 'auto',
     zIndex: 1,
     backgroundColor: "#CE8888",
     boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)",

@@ -59,7 +59,8 @@ html {
     left: 412px;
     top: -397px;
     border-radius: 50%;
-    pointer-events: none;
+    cursor: pointer;
+
 
     background: #CE8888;
 }
@@ -258,6 +259,7 @@ html {
     top: 350px;
     opacity: 0;
     border-radius: 50%;
+    cursor: pointer;
 
     background: #CE8888;
     transform: rotate(-180deg);
@@ -283,6 +285,7 @@ html {
     top: 375px;
     opacity: 0;
     border-radius: 50%;
+    cursor: pointer;
 
     background: #CE8888;
     transform: rotate(-180deg);
@@ -413,6 +416,7 @@ html {
     height: 50px;
     margin: 0 auto;
     opacity: 0.2;
+    cursor: pointer;
 
     background: url(../imgs/galluri_icon.png);
     background-position: center;
@@ -426,6 +430,7 @@ html {
     margin: 0 auto;
     left: 250px;
     opacity: 0.2;
+    cursor: pointer;
 
     background: url(../imgs/charity-water-icon.png);
     background-position: center;
@@ -439,6 +444,7 @@ html {
     margin: 0 auto;
     left: 500px;
     opacity: 0.2;
+    cursor: pointer;
 
     background: url(../imgs/ziont-eyes.png);
     background-position: center;
@@ -452,6 +458,7 @@ html {
     margin: 0 auto;
     left: 750px;
     opacity: 0.2;
+    cursor: pointer;
 
     background: url(../imgs/hello-kitty-deanna.png);
     background-position: center;

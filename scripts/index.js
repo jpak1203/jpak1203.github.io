@@ -34,6 +34,7 @@ ellipseAnim.to("#hm-intro", 0.5, {
     height: '1754px',
     left: '412px',
     top: '-397px',
+    cursor: 'auto',
     boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)",
     ease: Power2.easeOut
 }, '-=0.4')

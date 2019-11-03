@@ -59,10 +59,11 @@ html {
     left: 412px;
     top: -397px;
     border-radius: 50%;
-    pointer-events: none;
-
+    cursor: pointer;
+    
     background: #CE8888;
 }
+
 
 #hm-nav-selection {
     position: absolute;

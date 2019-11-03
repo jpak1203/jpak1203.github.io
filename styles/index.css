@@ -60,6 +60,7 @@ html {
     top: -1500px;
     border-radius:50%;
     z-index: -1;
+    cursor: pointer;
 
     background: #CE8888;
 }
